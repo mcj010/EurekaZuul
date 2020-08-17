@@ -1,0 +1,15 @@
+server:
+  #服务网关端口号
+  port: 65001
+spring:
+  application:
+    name: eureka-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaserver1:30001/eureka/
+zuul:
+  routes:
+    api-a:
+      path: /Client/**
+      url: ServerClient
