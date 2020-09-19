@@ -10,7 +10,7 @@ import org.springframework.http.client.ClientHttpResponse;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
+//熔断
 public class ProducerFallback implements FallbackProvider {
     @Override
     public String getRoute() {
